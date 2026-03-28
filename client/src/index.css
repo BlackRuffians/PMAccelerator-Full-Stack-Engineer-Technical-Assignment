@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #f4f4f5;
+}
+
+a {
+  color: #2563eb;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e4e4e7;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #d4d4d8;
+  border-radius: 6px;
+  font: inherit;
+  min-width: 0;
+}
+
+textarea {
+  width: 100%;
+  min-height: 3rem;
+  resize: vertical;
+}
+
+button {
+  font: inherit;
+  padding: 0.45rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid #d4d4d8;
+  background: #fff;
+  cursor: pointer;
+}
+
+button.primary {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  padding: 0.6rem 0.75rem;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+}
+
+.hint {
+  color: #52525b;
+  font-size: 0.875rem;
+  margin: 0.25rem 0 0;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.forecast-day {
+  border: 1px solid #e4e4e7;
+  border-radius: 8px;
+  padding: 0.6rem;
+  text-align: center;
+  background: #fafafa;
+}
+
+.forecast-day .emoji {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.current-big {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.map-wrap {
+  height: 220px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e4e4e7;
+  margin-top: 0.5rem;
+}
+
+table.records {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+table.records th,
+table.records td {
+  border: 1px solid #e4e4e7;
+  padding: 0.4rem 0.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table.records th {
+  background: #f4f4f5;
+}
+
+.export-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e4e4e7;
+  font-size: 0.875rem;
+  color: #52525b;
+}
+
+@media (max-width: 600px) {
+  .current-big {
+    font-size: 1.75rem;
+  }
+}
