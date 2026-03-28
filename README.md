@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Weather app — full stack technical assessment
 
 **Completed:** Tech Assessment **#1** (frontend) **and** **#2** (backend).
@@ -121,3 +122,6 @@ Record a **1–2 minute** screen share walking through the UI, CRUD, exports, an
 ## Author / company note
 
 The app footer includes the submitter name and a short pointer to **PM Accelerator** on LinkedIn, per the brief.
+=======
+# PMAccelerator-Full-Stack-Engineer-Technical-Assignment
+>>>>>>> 7c498097e772574d42612fc187830bd79fa3c800
